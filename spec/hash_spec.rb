@@ -45,7 +45,11 @@ describe 'Create tests for a hash' do
   end
 
   it 'each fruit should have 4 keys' do
-    expect(small_fruit_nutrition_details[:apple]).to 
+    expect(small_fruit_nutrition_details[:apple].size).to eq 4
+    expect(small_fruit_nutrition_details[:plums].size).to eq 4
+    expect(small_fruit_nutrition_details[:avocado].size).to eq 4
+    expect(small_fruit_nutrition_details[:kiwifruit].size).to eq 4
+    # expect(small_fruit_nutrition_details[:apple]).to include(4.symbol)
   end
 
   it 'all calories should be between 40 to 150' do
